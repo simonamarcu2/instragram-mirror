@@ -1,0 +1,39 @@
+[debug] [2022-03-16T15:59:25.251Z] ----------------------------------------------------------------------
+[debug] [2022-03-16T15:59:25.252Z] Command:       /Users/simonamarcu/.nvm/versions/node/v17.3.1/bin/node /Users/simonamarcu/.nvm/versions/node/v17.3.1/bin/firebase hosting:channel:deploy instagram-mirror-SM
+[debug] [2022-03-16T15:59:25.252Z] CLI Version:   10.3.0
+[debug] [2022-03-16T15:59:25.252Z] Platform:      darwin
+[debug] [2022-03-16T15:59:25.252Z] Node Version:  v17.3.1
+[debug] [2022-03-16T15:59:25.256Z] Time:          Wed Mar 16 2022 15:59:25 GMT+0000 (Greenwich Mean Time)
+[debug] [2022-03-16T15:59:25.256Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-03-16T15:59:25.283Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-03-16T15:59:25.283Z] > authorizing via signed-in user (supersimy16@gmail.com)
+[debug] [2022-03-16T15:59:25.283Z] [iam] checking project insta-mirror-1afd2 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2022-03-16T15:59:25.285Z] > refreshing access token with scopes: []
+[debug] [2022-03-16T15:59:25.285Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2022-03-16T15:59:25.465Z] <<< HTTP RESPONSE 200 {"date":"Wed, 16 Mar 2022 15:59:25 GMT","expires":"Mon, 01 Jan 1990 00:00:00 GMT","pragma":"no-cache","cache-control":"no-cache, no-store, max-age=0, must-revalidate","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-03-16T15:59:25.507Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/insta-mirror-1afd2:testIamPermissions [none]
+[debug] [2022-03-16T15:59:25.507Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/insta-mirror-1afd2:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-03-16T15:59:25.757Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/insta-mirror-1afd2:testIamPermissions 200
+[debug] [2022-03-16T15:59:25.757Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/insta-mirror-1afd2:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-03-16T15:59:25.759Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/insta-mirror-1afd2 [none]
+[debug] [2022-03-16T15:59:26.112Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/insta-mirror-1afd2 200
+[debug] [2022-03-16T15:59:26.113Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/insta-mirror-1afd2 {"projectId":"insta-mirror-1afd2","projectNumber":"142457572652","displayName":"insta-mirror","name":"projects/insta-mirror-1afd2","resources":{"hostingSite":"insta-mirror-1afd2","realtimeDatabaseInstance":"insta-mirror-1afd2-default-rtdb","storageBucket":"insta-mirror-1afd2.appspot.com","locationId":"europe-west"},"state":"ACTIVE"}
+[info] 
+[info] === Deploying to 'insta-mirror-1afd2'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2022-03-16T15:59:26.116Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/insta-mirror-1afd2 [none]
+[debug] [2022-03-16T15:59:26.363Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/insta-mirror-1afd2 200
+[debug] [2022-03-16T15:59:26.363Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/insta-mirror-1afd2 {"projectId":"insta-mirror-1afd2","projectNumber":"142457572652","displayName":"insta-mirror","name":"projects/insta-mirror-1afd2","resources":{"hostingSite":"insta-mirror-1afd2","realtimeDatabaseInstance":"insta-mirror-1afd2-default-rtdb","storageBucket":"insta-mirror-1afd2.appspot.com","locationId":"europe-west"},"state":"ACTIVE"}
+[info] 
+[info] ✔  Deploy complete! 
+[info] 
+[info] Project Console: https://console.firebase.google.com/project/insta-mirror-1afd2/overview
+[debug] [2022-03-16T15:59:26.531Z] TypeError: Cannot read properties of undefined (reading 'deploys')
+    at /Users/simonamarcu/.nvm/versions/node/v17.3.1/lib/node_modules/firebase-tools/lib/deploy/index.js:94:36
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Command.actionFn (/Users/simonamarcu/.nvm/versions/node/v17.3.1/lib/node_modules/firebase-tools/lib/commands/hosting-channel-deploy.js:85:25)
+[error] 
+[error] Error: An unexpected error has occurred.

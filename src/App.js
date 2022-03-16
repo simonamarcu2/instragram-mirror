@@ -120,8 +120,8 @@ function App() {
           </form>
           <center className="authFooter">
             <small>
-              &copy; 2021 Instagram Tribute by{" "}
-              <a href="mailto:bkrofegha@gmail.com"> Blessing Krofegha</a>
+              &copy; 2022 Instagram Tribute by{" "}
+              <p>Simona Marcu</p>
             </small>
           </center>
         </div>
@@ -153,8 +153,8 @@ function App() {
           </form>
           <center className="authFooter">
             <small>
-              &copy; 2021 Instagram Tribute by{" "}
-              <a href="mailto:bkrofegha@gmail.com"> Blessing Krofegha</a>
+              &copy; 2022 Instagram Tribute by{" "}
+              <p>Simona Marcu</p>
             </small>
           </center>
         </div>
@@ -189,14 +189,18 @@ function App() {
       </div>
       <div className="timeline">
         {user && <ImageUpload user={user} />}
-        {posts.map(({ id, post }) => (
-          <Post
-            key={id}
-            username={post.username}
-            caption={post.caption}
-            imageUrl={post.imageUrl}
-          />
-        ))}
+        {
+          posts.map(({ id, post }) => (
+            <Post
+              key={id}
+              postId={id}
+              user={user} // To pass current user and keep track of current user when adding comment
+              username={post.username}
+              caption={post.caption}
+              imageUrl={post.imageUrl}
+            />
+          ))
+        }
       </div>
     </div>
   );

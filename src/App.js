@@ -120,7 +120,7 @@ function App() {
           </form>
           <center className="authFooter">
             <small>
-              &copy; 2022 Instagram Tribute by{" "}
+              &copy; 2022 Instagram Mirror by{" "}
               <p>Simona Marcu</p>
             </small>
           </center>
@@ -153,7 +153,7 @@ function App() {
           </form>
           <center className="authFooter">
             <small>
-              &copy; 2022 Instagram Tribute by{" "}
+              &copy; 2022 Instagram Mirror by{" "}
               <p>Simona Marcu</p>
             </small>
           </center>
